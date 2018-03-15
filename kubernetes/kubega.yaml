@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  labels:
+    k8s-app: kubega
+  name: kubega
+  namespace: kube-system
+spec:
+  selector:
+    matchLabels:
+      k8s-app: kubega
+  template:
+    metadata:
+      labels:
+        k8s-app: kubega
+      annotations:
+        scheduler.alpha.kubernetes.io/critical-pod: ''
+    spec:
+      tolerations:
+      - key: node-role.kubernetes.io/master
+        effect: NoSchedule
+      nodeSelector:
+        node-role.kubernetes.io/master: ""
+      restartPolicy: Always
+      containers:
+      - name: kuega
+        image: n0r1skcom/kubega
+        imagePullPolicy: Always
+        env:
+          - name: GITLAB_API_ENDPOINT
+            value: https://gitlab.example.com/api/v3/
+        ports:
+        - containerPort: 3000
+          hostPort: 3000
+          protocol: TCP
+      hostNetwork: true

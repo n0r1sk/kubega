@@ -1,0 +1,43 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "p3IB18uJRs4dL2K5yx24MrLYE9A=",
+			"path": "github.com/google/go-querystring/query",
+			"revision": "53e6ce116135b80d037921a7fdd5138cf32d7a8a",
+			"revisionTime": "2017-01-11T10:11:55Z"
+		},
+		{
+			"checksumSHA1": "ByFN6xh/YGP/D3DM9c8p0D9D1XM=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "90150a8ed11b6ce285e77e8af2b0109559ce4777",
+			"revisionTime": "2018-03-15T01:07:03Z"
+		},
+		{
+			"checksumSHA1": "Rsa100jdTB+rG4lrRSZiSNYlu/g=",
+			"path": "github.com/xanzy/go-gitlab",
+			"revision": "f8465d0e086756a5ea4e2a383d2a3c4510f283fa",
+			"revisionTime": "2018-03-06T18:58:18Z"
+		},
+		{
+			"checksumSHA1": "BGm8lKZmvJbf/YOJLeL1rw2WVjA=",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "21652f85b0fdddb6c2b6b77a5beca5c5a908174a",
+			"revisionTime": "2018-03-14T17:20:41Z"
+		},
+		{
+			"checksumSHA1": "+uhefBjafyiwITh1H7W6zSkm4G4=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "cc7307a45468e49eaf2997c890f14aa03a26917b",
+			"revisionTime": "2018-03-15T08:13:33Z"
+		},
+		{
+			"checksumSHA1": "eQq+ZoTWPjyizS9XalhZwfGjQao=",
+			"path": "golang.org/x/sys/windows",
+			"revision": "cc7307a45468e49eaf2997c890f14aa03a26917b",
+			"revisionTime": "2018-03-15T08:13:33Z"
+		}
+	],
+	"rootPath": "kube-gitlab-authn"
+}
